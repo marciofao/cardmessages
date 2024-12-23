@@ -230,6 +230,7 @@ a.rope {
 
 #mascot {
     width: 43%;
+    max-width: 364px;
 }
 #wish {
     font-size: 33px;
@@ -380,4 +381,8 @@ a {
     width: 50%;
     display: block;
     margin-top: 20px;
+}
+body{
+    height: 100%;
+    overflow: hidden;
 }

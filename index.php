@@ -67,7 +67,7 @@ $person_name = isset($_GET['n']) ? ucwords($_GET['n']) : 'Alguém';
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body style="<?php if (isset($_GET['f'])) echo "height: auto; overflow: auto;"; ?>">
   <?php if (!isset($_GET['f'])): ?>
     <div class="leftcurtain"><img src="assets/img/left.jpg" /></div>
     <div class="rightcurtain"><img src="assets/img/right.jpg" /></div>
@@ -255,6 +255,11 @@ $person_name = isset($_GET['n']) ? ucwords($_GET['n']) : 'Alguém';
       function PlaySound() {
         var sound = document.getElementById("audiocracker");
         sound.play()
+        unsetBodyHeight();
+      }
+      function unsetBodyHeight(){
+        document.body.style.height = "auto";
+        document.body.style.overflow = "auto";
       }
     </script>
 
