@@ -1,0 +1,383 @@
+body {
+    background: #fff;
+    font-family: Roboto, Arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainContainer {
+    background: url();
+    max-width: 450px;
+    min-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    color: #999;
+    padding-bottom: 60px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.14),
+        0 1px 14px 2px rgba(0, 0, 0, 0.12), 0 0 5px -3px rgba(0, 0, 0, 0.3);
+    background-size: 100%;
+}
+#username {
+    color: black; /* Fallback: assume this color ON TOP of image */
+    background: url(../img/jasu.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: swing 4s infinite;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 35px;
+    padding: 0 10px;
+    font-family: "SF Espresso Shack", cursive;
+}
+#usernameb {
+    color: black; /* Fallback: assume this color ON TOP of image */
+    background: url(../img/jasu.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: swing 4s infinite;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 25px;
+    padding: 0 10px;
+    font-family: "SF Espresso Shack", cursive;
+}
+.wishMessage {
+    color: #fff;
+    width: 90%;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 0px 0px 10px #afafaf;
+}
+.wishMessage p {
+    margin: 0.3em 0;
+}
+@keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+        color: #ff9933;
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+        color: #fff;
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+.demo {
+    font-size: 11;
+    font-weight: none;
+    color: #98201f;
+    animation: flash 0s infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+img {
+    border: none;
+}
+.leftcurtain {
+    width: 50%;
+    height: 120%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+}
+.rightcurtain {
+    width: 50%;
+    height: 120%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 3;
+}
+.rightcurtain img,
+.leftcurtain img {
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    margin: 0px auto;
+    margin-top: 150px;
+}
+.rope {
+    position: absolute;
+    top: 15px;
+    left: 25%;
+    z-index: 4;
+}
+.centered {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+a.rope {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.enter-name input[type="name"] {
+    background-color: #f2f919;
+    color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: blue;
+    padding: 15px;
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    height: 50px;
+    width: 70%;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+}
+.enter-name .btn {
+    border-radius: 10px;
+    font-size: 21px;
+    padding: 4px;
+    position: fixed;
+    right: 2px;
+    bottom: 5px;
+    height: 50px;
+    width: 23%;
+    display: inline-block;
+    color: black;
+    background-color: #10e43a;
+    border-color: black;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    line-height: 36px;
+    outline: 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    animation-duration: 4s !important;
+}
+.enter-name input[type="name"]::-webkit-input-placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.enter-name input[type="name"]::-moz-placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.enter-name input[type="name"]:focus::-webkit-input-placeholder {
+    color: black;
+}
+
+.enter-name input[type="name"]:focus::-moz-placeholder {
+    color: black;
+    font-size: 18px;
+}
+.m1 {
+    position: fixed;
+    left: 1%;
+    width: auto;
+    height: 100%;
+    top: 1%;
+    color: #000;
+}
+.m2 {
+    position: fixed;
+    right: 1%;
+    width: auto;
+    height: 100%;
+    top: 1%;
+    color: #000;
+}
+
+#mascot {
+    width: 43%;
+}
+#wish {
+    font-size: 33px;
+}
+.footerbtn {
+    display: block;
+    line-height: 15px;
+    position: fixed;
+    left: 0px;
+    bottom: 5px;
+    border: 0px solid red;
+    height: 55px;
+
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #34af23;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 30px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+    animation: footer infinite linear 1s;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+    position: fixed;
+}
+.footerbtn :active {
+    box-shadow: none;
+}
+
+@-webkit-keyframes footer {
+    from {
+        -webkit-transform: rotateZ(0);
+    }
+    25% {
+        -webkit-transform: rotateZ(1.5deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(-1.5deg);
+    }
+    to {
+        -webkit-transform: rotateZ(0);
+    }
+}
+canvas {
+    cursor: crosshair;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+.shareBtn {
+    position: fixed;
+    right: calc(50% - 145px);
+    bottom: 5px;
+    width: 300px;
+    height: 60px;
+    background-color: #007f00;
+    border-radius: 100px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow: hidden;
+    animation: footer infinite linear 1s;
+    transition: all 0.3s cubic-bezier(0.67, 0.13, 0.1, 0.81),
+        transform 0.15s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+.shareShow {
+    position: fixed;
+    right: calc(50% - 45px);
+    bottom: 5px;
+    width: 100px;
+    height: 60px;
+    background-color: brown;
+    border-radius: 100px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.67, 0.13, 0.1, 0.81),
+        transform 0.15s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+.platforms {
+    position: fixed;
+    right: calc(50% - 145px);
+    height: 100px;
+    width: 300px;
+    bottom: 65px;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(0.9);
+    overflow: hidden;
+}
+.platforms:target {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+.platforms a {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    color: #3f8efc;
+    text-transform: uppercase;
+}
+.platforms a:nth-child(1) {
+    background-color: #1a5276;
+    left: 60px;
+}
+.platforms a:nth-child(2) {
+    background-color: #1a5276;
+    left: 155px;
+}
+.platforms:target a {
+    top: 5px;
+}
+.platforms a:hover {
+    background: #000000;
+    box-shadow: 0 0 0 1px #a5cfff;
+}
+.platforms a:before {
+    content: attr(data-os);
+    position: absolute;
+    color: white;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#logo{
+    width: 50%;
+    display: block;
+    margin-top: 20px;
+}
