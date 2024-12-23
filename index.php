@@ -199,8 +199,8 @@ $person_name = isset($_GET['n']) ? ucwords($_GET['n']) : 'Alguém';
 
       <div class="platforms" id="platforms" style="display: none;">
         <center>
-          <a href="https://api.whatsapp.com/send?text=🤗😇 Você já viu isto??? %0A *<?php echo $person_name ?>* te enviou uma mensagem surpresa especial 😍 %0A 💁 Abra aqui 👇👇 %0A <?php echo $site_url ?>?n=<?php echo $person_name ?>" target="_blank" data-os="Whatsapp"><img src="assets/img/wtsp.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findviral.com/bz/?n=<?php echo $person_name ?>" target="_blank" data-os="Facebook"><img src="assets/img/fb.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
+          <a href="https://api.whatsapp.com/send?text=🤗😇 Você já viu isto??? %0A *<?php echo $person_name ?>* te enviou uma mensagem surpresa especial 😍 %0A 💁 Abra aqui 👇👇 %0A <?php echo $site_url ?>?n=<?php echo str_replace(' ','+', $person_name) ?>" target="_blank" data-os="Whatsapp"><img src="assets/img/wtsp.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findviral.com/bz/?n=<?php echo str_replace(' ','+', $person_name) ?>" target="_blank" data-os="Facebook"><img src="assets/img/fb.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
         </center>
       </div>
 
