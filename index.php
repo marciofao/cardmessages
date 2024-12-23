@@ -18,7 +18,7 @@ $person_name = isset($_GET['n']) ? ucwords($_GET['n']) : 'Alguém';
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta property="og:site_name" content="Create Wish" />
   <meta property="og:image" content="assets/img/ogmsg.jpg" />
-  <title><?php echo $person_name ?> te uma mensagem surpresa especial💌. Abra agora</title>
+  <title><?php echo $person_name ?> te enviou uma mensagem surpresa especial💌. Abra agora!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -199,7 +199,7 @@ $person_name = isset($_GET['n']) ? ucwords($_GET['n']) : 'Alguém';
 
       <div class="platforms" id="platforms" style="display: none;">
         <center>
-          <a href="https://api.whatsapp.com/send?text=🤗😇 Você já viu isto??? *<?php echo $person_name ?>* enviou-lhe uma mensagem surpresa especial 😍 💁 Abra aqui 👇👇 <?php echo $site_url ?>?n=<?php echo $person_name ?>" target="_blank" data-os="Whatsapp"><img src="assets/img/wtsp.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
+          <a href="https://api.whatsapp.com/send?text=🤗😇 Você já viu isto??? *<?php echo $person_name ?>* te enviou uma mensagem surpresa especial 😍 💁 Abra aqui 👇👇 <?php echo $site_url ?>?n=<?php echo $person_name ?>" target="_blank" data-os="Whatsapp"><img src="assets/img/wtsp.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Findviral.com/bz/?n=<?php echo $person_name ?>" target="_blank" data-os="Facebook"><img src="assets/img/fb.png" style="animation: tada 2s infinite;margin-top:5px;height: 50px;width:50px;"></a>
         </center>
       </div>
